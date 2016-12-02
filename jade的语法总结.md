@@ -1,4 +1,4 @@
-＃jade的语法总结
+# jade的语法总结
 
 [jade](https://www.npmjs.com/package/jade) 是一个类python风格的html的模版引擎。
 依赖node环境。
@@ -7,7 +7,7 @@
 
 ## jade的基本用法
 
-```jade
+```
 doctype html
 html
   head
@@ -24,7 +24,7 @@ html
 
 **html的输出**
 
-```html
+```
 <!DOCTYPE html>
 <html>
   <head>
@@ -39,7 +39,7 @@ html
 ## id和类
 
 
-```jade
+```
 #content
   .block
     input#bar.foo1.foo2
@@ -51,7 +51,7 @@ id采用`＃`的方式
 
 **html的输出**
 
-```html
+```
 <div id="content">
   <div class="block">
     <input id="bar" class="foo1 foo2"/>
