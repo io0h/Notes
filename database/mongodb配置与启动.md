@@ -5,7 +5,8 @@ yum install mongodb
 yum install mongodb-server
 ```
 
-2. 配置mongodb的db目录，先在/data 下面创建名称为mongod的目录
+
+2.配置mongodb的db目录，先在/data 下面创建名称为mongod的目录
 
 3.修改目录的所有者
 
@@ -37,12 +38,12 @@ service mongod start
 ```
 mongo
 
-> use admin
-> db.addUser('username','password')
-> exit
+use admin
+db.addUser('username','password')
+exit
 ```
 
-7. 修改mongodb.conf
+7.修改mongodb.conf
 
 注释`bind_ip`
 反注释`auth = true`
@@ -53,10 +54,17 @@ mongo
 auth = true 
 ```
 
-8. 重启monogd
+8.重启monogd
 
 
 ```
 service mongod restart
+```
+
+9.配置mongodb 开机启动
+
+
+```
+chkconfig mongod on
 ```
 
