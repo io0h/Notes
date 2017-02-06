@@ -1,2 +1,2 @@
 # Notes
-some notes
+这是自己平时记录的一些笔记
